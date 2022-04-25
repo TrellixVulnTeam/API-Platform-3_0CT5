@@ -1,0 +1,225 @@
+<?php //resource_metadata_06cf21d6b3a726a1deadff4ee9d763bd
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (\Symfony\Component\VarExporter\Internal\Registry::$prototypes['ApiPlatform\\Core\\Metadata\\Resource\\ResourceMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('ApiPlatform\\Core\\Metadata\\Resource\\ResourceMetadata')),
+    ],
+    null,
+    [
+        'ApiPlatform\\Core\\Metadata\\Resource\\ResourceMetadata' => [
+            'shortName' => [
+                'User',
+            ],
+            'description' => [
+                '',
+            ],
+            'itemOperations' => [
+                [
+                    'get' => [
+                        'method' => 'GET',
+                        'input_formats' => [
+                            'jsonld' => [
+                                'application/ld+json',
+                            ],
+                            'json' => [
+                                'application/json',
+                            ],
+                            'html' => [
+                                'text/html',
+                            ],
+                            'jsonhal' => [
+                                'application/hal+json',
+                            ],
+                        ],
+                        'output_formats' => [
+                            'jsonld' => [
+                                'application/ld+json',
+                            ],
+                            'json' => [
+                                'application/json',
+                            ],
+                            'html' => [
+                                'text/html',
+                            ],
+                            'jsonhal' => [
+                                'application/hal+json',
+                            ],
+                        ],
+                    ],
+                    'put' => [
+                        'security' => 'is_granted(\'ROLE_USER\') and object == user',
+                        'input' => null,
+                        'output' => null,
+                        'method' => 'PUT',
+                        'input_formats' => [
+                            'jsonld' => [
+                                'application/ld+json',
+                            ],
+                            'json' => [
+                                'application/json',
+                            ],
+                            'html' => [
+                                'text/html',
+                            ],
+                            'jsonhal' => [
+                                'application/hal+json',
+                            ],
+                        ],
+                        'output_formats' => [
+                            'jsonld' => [
+                                'application/ld+json',
+                            ],
+                            'json' => [
+                                'application/json',
+                            ],
+                            'html' => [
+                                'text/html',
+                            ],
+                            'jsonhal' => [
+                                'application/hal+json',
+                            ],
+                        ],
+                    ],
+                    'delete' => [
+                        'security' => 'is_granted(\'ROLE_ADMIN\')',
+                        'input' => null,
+                        'output' => null,
+                        'method' => 'DELETE',
+                        'input_formats' => [
+                            'jsonld' => [
+                                'application/ld+json',
+                            ],
+                            'json' => [
+                                'application/json',
+                            ],
+                            'html' => [
+                                'text/html',
+                            ],
+                            'jsonhal' => [
+                                'application/hal+json',
+                            ],
+                        ],
+                        'output_formats' => [
+                            'jsonld' => [
+                                'application/ld+json',
+                            ],
+                            'json' => [
+                                'application/json',
+                            ],
+                            'html' => [
+                                'text/html',
+                            ],
+                            'jsonhal' => [
+                                'application/hal+json',
+                            ],
+                        ],
+                    ],
+                ],
+            ],
+            'collectionOperations' => [
+                [
+                    'get' => [
+                        'method' => 'GET',
+                        'input_formats' => [
+                            'jsonld' => [
+                                'application/ld+json',
+                            ],
+                            'json' => [
+                                'application/json',
+                            ],
+                            'html' => [
+                                'text/html',
+                            ],
+                            'jsonhal' => [
+                                'application/hal+json',
+                            ],
+                        ],
+                        'output_formats' => [
+                            'jsonld' => [
+                                'application/ld+json',
+                            ],
+                            'json' => [
+                                'application/json',
+                            ],
+                            'html' => [
+                                'text/html',
+                            ],
+                            'jsonhal' => [
+                                'application/hal+json',
+                            ],
+                        ],
+                    ],
+                    'post' => [
+                        'security' => 'is_granted(\'IS_AUTHENTICATED_ANONYMOUSLY\')',
+                        'validation_groups' => [
+                            'Default',
+                            'create',
+                        ],
+                        'input' => null,
+                        'output' => null,
+                        'method' => 'POST',
+                        'input_formats' => [
+                            'jsonld' => [
+                                'application/ld+json',
+                            ],
+                            'json' => [
+                                'application/json',
+                            ],
+                            'html' => [
+                                'text/html',
+                            ],
+                            'jsonhal' => [
+                                'application/hal+json',
+                            ],
+                        ],
+                        'output_formats' => [
+                            'jsonld' => [
+                                'application/ld+json',
+                            ],
+                            'json' => [
+                                'application/json',
+                            ],
+                            'html' => [
+                                'text/html',
+                            ],
+                            'jsonhal' => [
+                                'application/hal+json',
+                            ],
+                        ],
+                    ],
+                ],
+            ],
+            'graphql' => [
+                [
+                    'item_query' => [],
+                    'collection_query' => [],
+                    'delete' => [],
+                    'update' => [],
+                    'create' => [],
+                ],
+            ],
+            'attributes' => [
+                [
+                    'security' => 'is_granted(\'ROLE_USER\')',
+                    'normalization_context' => [
+                        'groups' => [
+                            'user:read',
+                        ],
+                    ],
+                    'denormalization_context' => [
+                        'groups' => [
+                            'user:write',
+                        ],
+                    ],
+                    'input' => null,
+                    'output' => null,
+                    'filters' => [
+                        'annotated_app_entity_user_api_platform_core_serializer_filter_property_filter',
+                    ],
+                ],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

@@ -1,0 +1,84 @@
+<?php //%255BApp%255CEntity%255CUser%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['ApiPlatform\\Core\\Annotation\\ApiResource'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('ApiPlatform\\Core\\Annotation\\ApiResource')),
+        clone ($p['ApiPlatform\\Core\\Annotation\\ApiFilter'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('ApiPlatform\\Core\\Annotation\\ApiFilter')),
+        clone ($p['Symfony\\Bridge\\Doctrine\\Validator\\Constraints\\UniqueEntity'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Bridge\\Doctrine\\Validator\\Constraints\\UniqueEntity')),
+        clone $p['Symfony\\Bridge\\Doctrine\\Validator\\Constraints\\UniqueEntity'],
+        clone ($p['Doctrine\\ORM\\Mapping\\Entity'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\Entity')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'collectionOperations' => [
+                [
+                    'get',
+                    'post' => [
+                        'security' => 'is_granted(\'IS_AUTHENTICATED_ANONYMOUSLY\')',
+                        'validation_groups' => [
+                            'Default',
+                            'create',
+                        ],
+                    ],
+                ],
+            ],
+            'itemOperations' => [
+                [
+                    'get',
+                    'put' => [
+                        'security' => 'is_granted(\'ROLE_USER\') and object == user',
+                    ],
+                    'delete' => [
+                        'security' => 'is_granted(\'ROLE_ADMIN\')',
+                    ],
+                ],
+            ],
+            'attributes' => [
+                [
+                    'security' => 'is_granted(\'ROLE_USER\')',
+                    'normalization_context' => [
+                        'groups' => [
+                            'user:read',
+                        ],
+                    ],
+                    'denormalization_context' => [
+                        'groups' => [
+                            'user:write',
+                        ],
+                    ],
+                ],
+            ],
+            'filterClass' => [
+                1 => 'ApiPlatform\\Core\\Serializer\\Filter\\PropertyFilter',
+            ],
+            'fields' => [
+                2 => [
+                    'username',
+                ],
+                [
+                    'email',
+                ],
+            ],
+            'groups' => [
+                2 => [
+                    'Default',
+                ],
+                [
+                    'Default',
+                ],
+            ],
+            'repositoryClass' => [
+                4 => 'App\\Repository\\UserRepository',
+            ],
+        ],
+    ],
+    [
+        $o[0],
+        $o[1],
+        $o[2],
+        $o[3],
+        $o[4],
+    ],
+    []
+); }];

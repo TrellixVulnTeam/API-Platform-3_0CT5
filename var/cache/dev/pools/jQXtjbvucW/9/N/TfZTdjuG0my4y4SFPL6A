@@ -1,0 +1,85 @@
+<?php //App_Entity_CheeseListing
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Symfony\\Component\\Serializer\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Serializer\\Mapping\\ClassMetadata')),
+        clone ($p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata')),
+        clone $p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'],
+        clone $p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'],
+        clone $p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'],
+        clone $p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'],
+        clone $p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'],
+        clone $p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'],
+        clone $p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'],
+        clone $p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'],
+        clone $p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'],
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'App\\Entity\\CheeseListing',
+                'id',
+                'title',
+                'description',
+                'price',
+                'createdAt',
+                'isPublished',
+                'owner',
+                'shortDescription',
+                'textDescription',
+                'createdAtAgo',
+            ],
+            'attributesMetadata' => [
+                [
+                    'id' => $o[1],
+                    'title' => $o[2],
+                    'description' => $o[3],
+                    'price' => $o[4],
+                    'createdAt' => $o[5],
+                    'isPublished' => $o[6],
+                    'owner' => $o[7],
+                    'shortDescription' => $o[8],
+                    'textDescription' => $o[9],
+                    'createdAtAgo' => $o[10],
+                ],
+            ],
+            'groups' => [
+                2 => [
+                    'cheese:read',
+                    'cheese:write',
+                    'user:read',
+                    'user:write',
+                ],
+                [
+                    'cheese:read',
+                ],
+                [
+                    'cheese:read',
+                    'cheese:write',
+                    'user:read',
+                    'user:write',
+                ],
+                7 => [
+                    'cheese:read',
+                    'cheese:collection:post',
+                ],
+                [
+                    'cheese:read',
+                ],
+                [
+                    'cheese:write',
+                    'user:write',
+                ],
+                [
+                    'cheese:read',
+                ],
+            ],
+            'serializedName' => [
+                9 => 'description',
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];
